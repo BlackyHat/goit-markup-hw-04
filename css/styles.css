@@ -99,15 +99,18 @@ img {display: block;}
 
 .contacts {
   display: flex;
-  margin-left: auto;
-}
+  margin-left: auto; 
+  align-items: center;
+
+} 
 
 .contacts .contacts-item + .contacts-item {
   margin-left: 50px;
 }
 
-
 .contacts-link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -116,21 +119,22 @@ img {display: block;}
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
 }
 
 .contacts-link:hover,
 .contacts-link:focus {color: var(--accent-color);}
 
-.icon-mail,
-.icon-phone {
-margin-right: 10px;
-fill: currentColor;
+.icon-mail {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
-.icon-phone {
-  width: 10px;
-  height: 16px;
+.icon-phone {  
+  margin-right: 10px;
+  fill: currentColor;
 }
+
 
 
 /* СЕКЦІЯ ГЕРОЙ */
@@ -252,7 +256,8 @@ fill: currentColor;
 
 .team {background-color: var(--secondary-section-background); }
 
-.worker-list {display: flex;}
+.worker-list {display: flex;
+}
 
 .worker-list__item {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -260,11 +265,15 @@ fill: currentColor;
   0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
+
 }
 
 .worker-list .worker-list__item:not(:first-child) {margin-left: 30px;}
 
 .worker-list__info {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -367,11 +376,9 @@ background-color: var(--accent-color);
   /* height: 252px; */
 }
 
-.musk {
-  display: inline-flex;
-  flex-direction: row;
+.footer-box {
+  display: flex;
   gap: 70px;
-  flex-grow: 1;
 }
 
 .logo-inverse {
@@ -400,7 +407,8 @@ background-color: var(--accent-color);
 
 .footer-contacts:not(:last-child) {margin-bottom: 9px;}
 
-.social-label {
+.join-label {
+  display: inline-block;
   padding-top: 12px;
   margin-bottom: 20px;
   color: var(--primary-white-color);
@@ -408,11 +416,11 @@ background-color: var(--accent-color);
   font-size: 14px;
   line-height: 1.1429;
   letter-spacing: 0.03em;
+  text-decoration: str;
   text-transform: uppercase;
 }
 
 .social-footer {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -480,6 +488,8 @@ background-color: var(--accent-color);
 .filter-list-button:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+ 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -492,6 +502,11 @@ background-color: var(--accent-color);
 
 .project__item {
   width: calc((100% - 2 * 30px) / 3);
+}
+.project__item:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+ 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+ 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 /* Перший варіант виконання оформлення кожен третій елемет та останні 3 елементи */
