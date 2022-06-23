@@ -10,7 +10,7 @@
   --color-border-under-main-nav: rgb(236,236,236);
   --bg-color-for-features: rgba(245, 244, 250, 1);
   --social-buttons-color: rgb(175, 177, 184);
-  --footer-social-bg-for-icon: rgba(255, 255, 255, 0.1)''
+  --footer-social-bg-for-icon: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -50,6 +50,19 @@ img {display: block;}
 }
 
 .section.no-padding-top {padding-top: 0;}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* СЕКЦІЯ ХЕДЕР */
 
